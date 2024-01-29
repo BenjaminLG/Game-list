@@ -1,0 +1,44 @@
+/* ROOT */
+
+:root {
+    --background-color:rgb(41, 135, 228);
+    --container-color:rgb(37, 41, 50);
+    --border-btn-1:rgb(31, 182, 113);
+    --border-btn-2:rgb(41, 135, 228);
+    --border-btn-3:rgb(228, 41, 131);
+    --principal-font-color:rgb(255, 255, 255);
+    --second-font-color:rgb(37, 41, 50);
+    --third-font-color:rgb(255, 255, 255);
+    --font-btn:rgb(41, 135, 228);
+    --border-btn-color:rgb(255, 255, 255);
+}
+  
+/* GENERALE */
+  
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+  
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo
