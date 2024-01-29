@@ -4,12 +4,13 @@
 
 :root {
     --background-color:rgb(41, 135, 228);
+    --background-game: rgb(0, 0, 0);   
     --container-color:rgb(37, 41, 50);
     --border-btn-1:rgb(31, 182, 113);
     --border-btn-2:rgb(41, 135, 228);
     --border-btn-3:rgb(228, 41, 131);
     --principal-font-color:rgb(255, 255, 255);
-    --second-font-color:rgb(37, 41, 50);
+    --second-font-color:rgb(0, 0, 0);
     --third-font-color:rgb(255, 255, 255);
     --font-btn:rgb(41, 135, 228);
     --border-btn-color:rgb(255, 255, 255);
@@ -87,7 +88,6 @@ img {
 }
 
 .fa-brands:hover{
-    
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
 
@@ -95,15 +95,12 @@ img {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
     }
-  
     20%, 80% {
       transform: translate3d(2px, 0, 0);
     }
-  
     30%, 50%, 70% {
       transform: translate3d(-4px, 0, 0);
     }
-  
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
