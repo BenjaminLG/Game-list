@@ -25,10 +25,10 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     font-size: 16px;
     overflow-x: hidden;
     background-color: var(--background-color);
+    font-family: 'VT323', monospace;
 }
 
 img {
@@ -50,7 +50,6 @@ img {
 }
 
 .header__title {
-    font-family: 'VT323', monospace;
     font-size: 60px;
     color: var(--second-font-color);
 }
@@ -70,7 +69,6 @@ img {
     border: solid var(--border-btn-color) 2px;
     background-color: var(--container-color);
     color: var(--third-font-color);
-    font-family: 'VT323', monospace;
     font-size: 24px;
     text-align: center;
     padding-top: 4px;
@@ -104,4 +102,88 @@ img {
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
-  }
+}
+
+/* MAIN */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container {
+    max-width: 1500px;
+    height: auto;
+    background-color: var(--container-color);
+    border-radius: 30px;
+    padding: 24px;
+}
+
+.main__container--title {
+    font-size: 24px;
+    text-align: center;
+    margin: 8px 0px 32px;
+    color: var(--principal-font-color);
+}
+
+.main__container--game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;    
+    width: 300px;
+    height: 450px;
+    background-color: var(--background-game);
+    border-radius: 40px 0px 0px 0px;
+    padding: 24px 0px;
+}
+
+.green-border {
+    border: solid var(--border-btn-1) 3px;
+}
+
+.blue-border {
+    border: solid var(--border-btn-2) 3px;
+}
+
+.pink-border {
+    border: solid var(--border-btn-3) 3px;
+}
+
+.game__picture {
+    max-width: 230px;
+}
+
+.game__descritpion {
+    color: var(--principal-font-color);
+    text-align: center;
+    padding: 32px;
+}
+
+.game__box {
+    text-align: center;
+}
+
+.game__box-btn {
+    border: solid 3px var(--border-btn-color);
+    border-radius: 10px 10px 0px 10px;
+    color: var(--font-btn);
+    font-size: 24px;
+    text-align: center;
+    padding: 4px 16px;
+
+    &:hover {
+        transition: 250ms ease-in-out;
+        color: var(--principal-font-color);
+        border: solid 3px var(--border-btn-2);
+    }
+}
