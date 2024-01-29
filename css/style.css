@@ -51,6 +51,31 @@ img {
 .header__title {
     font-family: 'VT323', monospace;
     font-size: 60px;
-    color: var(--principal-font-color);
+    color: var(--second-font-color);
+}
 
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.header__container--btn-portfolio {
+    width: 110px;
+    height: 35px;
+    border-radius: 10px 10px 0px 10px;
+    border: solid var(--border-btn-color) 2px;
+    background-color: var(--container-color);
+    color: var(--third-font-color);
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 4px;
+
+    &:hover {
+        border: var(--border-btn-3) solid 2px;
+        transition: 250ms ease-in-out;
+    }
 }
