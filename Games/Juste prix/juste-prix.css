@@ -1,41 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Pacifico&display=swap');
 
 
-html, body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #232020;
-  min-width: 1000px;
-}
-
-.container {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1000px;
-    min-height: 500px;
-    background-color: rgb(214, 236, 255);
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #232020;
+    margin: 0;
+    padding: 0;
 }
 
 .container__header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    background-color: rgb(224, 240, 253);
+    width: 800px;
+    margin: 16px;
+    border-radius: 16px 16px 32px 32px;
 }
 
 .container__header--logo {
     width: 150px;
 }
+
+.container__header--link {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #232020;
+    background-color: #ff7315;
+    padding: 4px;
+    border-radius: 10px;
+    border: #232020 solid 2px;
+
+    &:hover {
+        transition: 250ms ease-in-out;
+        background-color: #ffe8dc;
+        border: #ff7315 2px solid;
+    }
+}
   
 .container__header--title {
   font-family: 'Pacifico', cursive;
-  color: #ff7315;
+  color:#232020;
   margin: 40px 0px 0px;
   text-align: center;
-  font-size: 3em;
+  font-size: 48px;
 }
 
 #instructions {

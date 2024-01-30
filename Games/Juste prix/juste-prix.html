@@ -9,25 +9,23 @@
     <title>Le Juste Prix</title>
 </head>
     <body>
-        <section class="container">
-              <header class="container__header">
-                <img src="../Juste prix/images/logo-BLG.png" alt="logo Benjamin Le Guellec" class="container__header--logo">
-                <h1 class="container__header--title">Le Juste Prix</h1>
-                <a class="container__header--link" href="/index.html">Retour à l'espace des jeux</a>
-              </header>
-            <!-- Formulaire -->
-            <main class="container__main">
-                <form id="form" class="container__main--form">
-                    <input id="prix" class="form-control" placeholder="Devinez le prix ! (entre 0 et 1 000)" />
-                    <button type="submit" class="btn btn-primary">Deviner</button>
-                    <small class="text-danger">Vous devez rentrer un nombre.</small>
-                </form>
-            </main>
-            <!-- Instructions -->
-            <div class="">
-              <div id="instructions" class=""></div>
-            </div>
-        </section>
+        <header class="container__header">
+            <img src="../Juste prix/images/logo-BLG.png" alt="logo Benjamin Le Guellec" class="container__header--logo">
+            <a class="container__header--link" href="/index.html">Retour à l'espace des jeux</a>
+            <h1 class="container__header--title">Le Juste Prix</h1>
+        </header>
+        <!-- Formulaire -->
+        <main class="container__main">
+            <form id="form" class="container__main--form">
+                <input id="prix" class="form-control" placeholder="Devinez le prix ! (entre 0 et 1 000)" />
+                <button type="submit" class="btn btn-primary">Deviner</button>
+                <small class="text-danger">Vous devez rentrer un nombre.</small>
+            </form>
+        </main>
+        <!-- Instructions -->
+        <div class="">
+            <div id="instructions" class="instruction"></div>
+        </div>
         <script src="juste-prix.js"></script>    
     </body>
 </html>
