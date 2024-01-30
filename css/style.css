@@ -159,6 +159,10 @@ img {
     border: solid var(--border-btn-3) 3px;
 }
 
+.game {
+    position: relative;
+}
+
 .game__picture {
     max-width: 230px;
 }
@@ -169,11 +173,9 @@ img {
     padding: 32px;
 }
 
-.game__box {
-    text-align: center;
-}
-
-.game__box-btn {
+.game__btn {
+    position: absolute;
+    bottom : 20px;
     border: solid 3px var(--border-btn-color);
     border-radius: 10px 10px 0px 10px;
     color: var(--font-btn);
