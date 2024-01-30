@@ -52,6 +52,38 @@ body {
   font-size: 48px;
 }
 
+/*MAIN*/
+
+.container__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 800px;
+    background-color: rgb(224, 240, 253);
+    min-height: 300px;
+    margin: 16px;
+    padding: 32px;
+    border-radius: 32px 32px 16px 16px;
+}
+
+.container__main--form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+}
+
+.form-control {
+    width: 250px;
+    height: 30px;
+    border-radius: 12px 0px 12px;
+}
+
+
+/*INSTRUCTIONS*/
+
 #instructions {
   font-family: 'JetBrains Mono', monospace;
   color: white;
