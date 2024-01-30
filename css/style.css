@@ -112,6 +112,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 16px 0px 48px;
 }
 
 .main__container {
@@ -247,3 +248,23 @@ img {
     }
 }
 
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--container-color);
+    padding: 8px 0px 16px;
+}
+
+.footer__logo {
+    max-width: 120px;
+}
+
+.footer__copyright {
+    color: var(--principal-font-color);
+    font-size: 24px;
+}
