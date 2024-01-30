@@ -48,12 +48,14 @@ img {
 }
 
 .header__logo {
-    max-width: 10%;
+    width: 150px;
 }
 
 .header__title {
-    font-size: 60px;
+    font-size: 52px;
     color: var(--second-font-color);
+    text-align: center;
+    margin: 0px 32px;
 }
 
 .header__container {
@@ -112,7 +114,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 16px 0px 48px;
+    margin: 16px 48px 48px;
 }
 
 .main__container {
@@ -248,7 +250,6 @@ img {
     }
 }
 
-
 /* FOOTER */
 
 .footer {
@@ -267,4 +268,25 @@ img {
 .footer__copyright {
     color: var(--principal-font-color);
     font-size: 24px;
+}
+
+
+
+/* RESPONSIVE */
+
+/* Smartphone */
+
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .header__logo {
+        width: 100px;
+    }
+
+    .header__title {
+        font-size: 32px;
+    }
 }
