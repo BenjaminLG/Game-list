@@ -4,7 +4,8 @@
 
 :root {
     --background-color:rgb(41, 135, 228);
-    --background-game: rgb(0, 0, 0);   
+    --background-game: rgb(0, 0, 0);
+    --background-game-name: rgba(128, 128, 128, 0.9);
     --container-color:rgb(37, 41, 50);
     --border-btn-1:rgb(31, 182, 113);
     --border-btn-2:rgb(41, 135, 228);
@@ -13,6 +14,7 @@
     --second-font-color:rgb(0, 0, 0);
     --third-font-color:rgb(255, 255, 255);
     --font-btn:rgb(41, 135, 228);
+    --font-text-alert: rgb(228, 41, 131);
     --border-btn-color:rgb(255, 255, 255);
 }
   
@@ -163,14 +165,69 @@ img {
     position: relative;
 }
 
-.game__picture {
-    max-width: 230px;
+.game__visual {
+    position: relative;
+    width: 230px;
+    height: 173px;
+}
+
+.game__visual--name {
+    position: absolute;
+    width: 230px;
+    height: auto;
+    top: 145px;
+    background-color: var(--background-game-name);
+    color: var(--second-font-color);
+    font-size: 24px;
+    text-align: center;
+    padding: 2px 0px;
+}
+
+.img-snake {
+    background-image: url(/images/snakeGame.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-prix {
+    background-image: url(/images/juste-prix.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-pixel {
+    background-image: url(/images/pixel-art.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-snake {
+    background-image: url(/images/snakeGame.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-morpion {
+    background-image: url(/images/morpion.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2048 {
+    background-image: url(/images/2048.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .game__descritpion {
     color: var(--principal-font-color);
     text-align: center;
     padding: 32px;
+}
+
+.red-alert {
+    font-size: 28px;
+    color: var(--font-text-alert);
 }
 
 .game__btn {
@@ -189,3 +246,4 @@ img {
         border: solid 3px var(--border-btn-2);
     }
 }
+
