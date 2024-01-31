@@ -156,3 +156,41 @@ body {
 .footer {
     color: #fcddc8;
 }
+
+
+/* RESPONSIVE */
+
+/* Smartphone */
+
+@media screen and (max-width: 767px) {
+    
+    .container__header {
+        width: 350px;
+    }
+
+    .container__header--link {
+        margin: 0px 16px;
+        font-size: 12px;
+    }
+
+    .container__header--title {
+        font-size: 36px;
+    }
+
+    .container__main {
+        width: 350px;
+    }
+
+    .container__main div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .instruction {
+        width: 290px;
+        font-size: 12px;
+    }
+}
