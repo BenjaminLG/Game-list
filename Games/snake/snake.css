@@ -12,6 +12,39 @@ body {
     background: #e3f2fd;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__link {
+    background-color: #293447;
+    border:#c436d1 3px solid;
+    border-radius: 12px;
+    color: #b8c6dc;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        background-color: #b8c6dc;
+        color: #293447;
+        border: #171b26 3px solid;
+    }
+}
+
+.header__title {
+    font-size: 48px;
+    color: #212837;
+}
+
 .container {
     display: flex;
     align-items: center;
