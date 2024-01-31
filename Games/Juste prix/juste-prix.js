@@ -2,6 +2,7 @@
 const input        = document.querySelector('#prix');
 const error        = document.querySelector('small');
 const form         = document.querySelector('#form');
+const resetBtn     = document.querySelector('#resetBtn');
 
 // Etape 2 - Cacher l'erreur
 error.style.display = "none";
@@ -60,4 +61,17 @@ form.addEventListener('submit', (e) => {
     input.value = ''; // cela efface le numero une fois valider
     verifier(nombreChoisi);
   }
+});
+
+
+resetBtn.addEventListener('click', () => {
+    coups = 0;
+    nombreChoisi = undefined;
+    input.disabled = false;
+    input.value = '';
+    error.style.display = 'none';
+    input.style.borderColor = 'silver';
+    document.querySelector('#instructions').innerHTML = ''; // Effacer les instructions précédentes
+    // Générer un nouveau nombre aléatoire pour la prochaine partie
+    nombreAleatoire = Math.floor(Math.random() * 1001);
 });

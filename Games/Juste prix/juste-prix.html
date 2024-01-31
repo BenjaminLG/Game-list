@@ -17,8 +17,12 @@
         <!-- Formulaire -->
         <main class="container__main">
             <form id="form" class="container__main--form">
-                <input id="prix" class="form-control" placeholder="Devinez le prix ! (entre 0 et 1 000)" />
-                <button type="submit" class="btn btn-primary">Deviner</button>
+                <div>
+                    <input id="prix" class="form-control" placeholder="Devinez le prix ! (entre 0 et 1 000)" />
+                    <button type="submit" class="btn btn-primary">Deviner</button>
+                </div>
+                <button type="button" class="btn btn-reset" id="resetBtn">Réinitialiser</button>
+                
                 <small class="text-danger">Vous devez rentrer un nombre.</small>
             </form>
             <!-- Instructions -->

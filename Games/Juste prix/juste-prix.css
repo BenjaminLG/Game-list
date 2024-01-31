@@ -63,7 +63,7 @@ body {
     background-color: rgb(224, 240, 253);
     min-height: 300px;
     margin: 16px;
-    padding: 32px;
+    padding: 32px 0px;
     border-radius: 32px 32px 16px 16px;
 }
 
@@ -79,7 +79,7 @@ body {
     width: 300px;
     height: 30px;
     border-radius: 12px;
-    border: #ff7315 2px solid;
+    border: #242322 2px solid;
     background-color: white;
     transition: border 0.3s ease;
 
@@ -92,6 +92,32 @@ body {
     }
 }
 
+.btn-primary {
+    background-color: #ffa372;
+    height: 36px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        background-color: #ff7315;
+        cursor: pointer;
+    }
+}
+
+.btn-reset {
+    background-color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    border-radius: 16px;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        background-color:rgb(231, 224, 255);
+        cursor: pointer;
+    }
+}
 
 
 
