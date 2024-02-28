@@ -3,7 +3,7 @@
 /* ROOT */
 
 :root {
-    --background-color:rgb(41, 135, 228);
+    --background-color:rgb(51, 60, 87);
     --background-game: rgb(0, 0, 0);
     --background-game-name: rgba(128, 128, 128, 0.9);
     --container-color:rgb(37, 41, 50);
@@ -11,7 +11,7 @@
     --border-btn-2:rgb(41, 135, 228);
     --border-btn-3:rgb(228, 41, 131);
     --principal-font-color:rgb(255, 255, 255);
-    --second-font-color:rgb(0, 0, 0);
+    --second-font-color:rgb(165, 204, 240);
     --third-font-color:rgb(255, 255, 255);
     --font-btn:rgb(41, 135, 228);
     --font-text-alert: rgb(228, 41, 131);
